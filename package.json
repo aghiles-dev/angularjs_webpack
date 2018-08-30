@@ -1,0 +1,19 @@
+{
+  "name": "angularjs_webpack",
+  "version": "1.0.0",
+  "description": "angularjs test project using webpack as a module builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aghiles-dev/angularjs_webpack.git"
+  },
+  "author": "aghiles-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aghiles-dev/angularjs_webpack/issues"
+  },
+  "homepage": "https://github.com/aghiles-dev/angularjs_webpack#readme"
+}
