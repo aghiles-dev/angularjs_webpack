@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta charset="UTF-8">
+  <title>Angularjs Webpack</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+
+<div id="main-container" class="container-fluid">
+
+  <div class="row navigation">
+    <div class="col-sm-12">
+      <navigation-directive></navigation-directive>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div ng-view=""></div>
+    </div>
+  </div>
+
+  <div class="row footer">
+    <div class="col-sm-12">
+      <footer-directive></footer-directive>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

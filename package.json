@@ -2,9 +2,40 @@
   "name": "angularjs_webpack",
   "version": "1.0.0",
   "description": "angularjs test project using webpack as a module builder",
-  "main": "index.js",
+  "main": "./app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --progress"
+  },
+  "dependencies": {
+    "angular": "1.6.6",
+    "angular-animate": "1.6.6",
+    "angular-route": "1.6.6",
+    "angular-sanitize": "1.6.6",
+    "angular-toastr": "2.1.1",
+    "babel-core": "6.26.3",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "7.1.5",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-env": "1.6.0",
+    "bootstrap": "3.3.2",
+    "components-font-awesome": "4.7.0",
+    "concurrently": "3.5.0",
+    "copy-webpack-plugin": "4.5.2",
+    "css-loader": "1.0.0",
+    "extract-css-chunks-webpack-plugin": "3.0.11",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "3.2.0",
+    "jquery": "2.2.4",
+    "node-sass": "4.9.3",
+    "raw-loader": "0.5.1",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.22.1",
+    "url-loader": "1.0.1",
+    "webpack": "4.16.2",
+    "webpack-cli": "3.1.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "3.1.5"
   },
   "repository": {
     "type": "git",
