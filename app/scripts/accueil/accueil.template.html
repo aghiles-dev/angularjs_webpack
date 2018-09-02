@@ -1,1 +1,33 @@
-<h1>Hello {{name}}</h1>
+<div class="row" style="margin-bottom: 50px">
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label for="inputFilter">Filtrer:</label>
+      <input type="text" ng-model="inputFilter" class="form-control" id="inputFilter">
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="tache in listeTaches | filter:inputFilter">
+        {{tache}}
+        <i class="fa fa-trash pull-right" ng-click="deleteElementByIndex($index)" aria-hidden="true" style="cursor: pointer" ></i>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-sm-6">
+    <form action="" ng-submit="addTaskToList()">
+      <div class="form-group">
+        <label for="listElement">Ajouter une tache:</label>
+        <input type="text" ng-model="name" class="form-control" id="listElement">
+      </div>
+    </form>
+    <button class="btn btn-success" ng-click="addTaskToList()">Ajouter</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-2">
+    <button class="btn btn-primary" ng-click="calculateNumberOfelementsContainingThree()">Calculer</button>
+  </div>
+  <div class="col-sm-10">
+    <h2>Il y a {{calculateNumberOfelementsContainingThree()}} éléments contenant le chiffre 3</h2>
+  </div>
+</div>
